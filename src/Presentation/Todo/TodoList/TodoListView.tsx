@@ -42,6 +42,7 @@ export default function TodoListView() {
               />
             </ListItemIcon>
             <ListItemText primary={todo.title} />
+            <ListItemText secondary={todo.id} />
             <button onClick={() => removeTodo(todo.id)}>remove</button>
           </ListItem>
         );
