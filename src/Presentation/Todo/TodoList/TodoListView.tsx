@@ -21,7 +21,7 @@ export default function TodoListView() {
 
   useEffect(() => {
     getTodos();
-  }, []);
+  }, [getTodos]);
 
   return (
     <List>
